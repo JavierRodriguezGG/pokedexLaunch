@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Pokedex LaunchX</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="title">
+        <h1>Pokedex LaunchX</h1>
+        <input
+          type="text"
+          placeholder="Introduce el nombre o ID de un pokemon"
+          id="pokeName"
+          name="pokeName"
+          class="input__poke"
+        />
+        <button class="btn-search" onclick="fetchPokemon()">
+          Buscar
+        </button>
+      </div>
+      <div class="panel_1">
+        <div class="img-dates">
+          <div class="impoke">
+          <img
+            src="/img/pokeball.png"
+            alt="Pokemon"
+            width="150px"
+            id="pokeImg"
+          />
+        </div>
+          <div>
+            <div>
+              <h4 id="nombrePoke"></h4>
+            </div>
+            <div>
+              Especie:
+              <h4 id="especiePoke"></h4>
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+      <div class="panel_2">
+        <div class="movimientosPoke"> 
+          <p id="movi"></p>
+        </div>
+
+        <div class="stats">
+          <div>
+            <p id="hp"></p>
+            <h4>HP</h4>
+          </div>
+
+          <div>
+            <p id="atk"></p>
+            <h4>ATTACK</h4>
+          </div>
+
+          <div>
+            <p id="def"></p>
+            <h4>DEFENSE</h4>
+          </div>
+
+          <div>
+            <p id="atks"></p>
+            <h4>SPECIAL ATTACK</h4>
+          </div>
+
+          <div>
+            <p id="defs"></p>
+            <h4>SPECIAL DEFENSE</h4>
+          </div>
+
+          <div>
+            <p id="spd"></p>
+            <h4>SPEED</h4>
+          </div>
+        </div>
+       
+      </div>
+      
+    </main>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

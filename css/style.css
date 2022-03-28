@@ -1,0 +1,107 @@
+body{
+    background-image: url("/img/wallpaperbetter.jpg");
+}
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row dense;
+    gap:1rem;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      "title title"
+      "panel_1 panel_2"
+      ". .";
+  }
+  
+  .title { grid-area: title; 
+    color: #fff;
+    text-align: center;
+}
+  
+  .panel_1 {
+    justify-self: end;
+    align-self: center;
+    grid-area: panel_1;
+  }
+  
+  .panel_2 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      "stats stats stats";
+    grid-area: panel_2;
+    justify-self: start;
+  }
+  
+  .stats { grid-area: stats; }
+  
+.panel_1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #000;
+    width: 450px;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgb(145, 14, 14);
+    color: #fff;
+    border-radius: 20px;
+}
+/* .img-dates{
+    background-color: #fff;
+    width: 150px;
+    height: 100px;
+} */
+.panel_1 img{
+    padding-bottom: 1rem;
+    width: 12rem;
+    height: auto;
+}
+.impoke{
+    background-color: rgb(114, 111, 111);
+}
+ .stats{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      font-size: .7rem;
+      text-align: center;
+}
+
+ .panel_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #000;
+    max-width: 550px;
+    min-height: 370px;
+    line-height: 20px;
+    padding: 2rem;
+    background-color: rgb(145, 14, 14);
+    color: #fff;
+    border-radius: 20px;
+} 
+
+.input__poke{
+    border: 1px solid #CDDC39;
+    width: 250px;
+    height: 30px;
+    border-radius: 2px;
+}
+.btn-search{
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #388E3C ;
+    color: #fff;
+}
